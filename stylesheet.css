@@ -9,8 +9,11 @@ body {
     font-size: 1.2em;
     margin: 0;
     padding: 0;
-    background-color: rgba(4,173,245);
+    background-color: rgba(255,255,255);
     height: 100%;
+    color: rgb(80, 77, 77);
+    border-color: rgb(55, 62, 65);
+    
 }
 
 html {
@@ -32,9 +35,9 @@ width: 100%;
 
 nav {
     float: left;
-    background-color: rgba(4,173,245);
+    background-color: rgba(255,255,255);
     width: 15%;
-    height: 100%;
+    border-right: rgb(55, 62, 65) 2px solid;
 }
 
 
@@ -46,8 +49,8 @@ nav {
     width: 100%;
     position: -webkit-sticky;
     position: sticky;
-    top: 10px;
-    background-color: rgba(4,173,245); 
+    top: 1px;
+    background-color: rgb(109, 110, 112); 
 }
 
 .navBar ul a {
@@ -56,12 +59,12 @@ nav {
     color: rgb(0, 0, 0);
     padding: 8px 16px;
     text-decoration: none;
-    border-bottom: 2px solid rgb(0, 0, 0);
+    border-bottom: black 2px solid ;
 }
 
 .current,
 .navBar a:hover {
-    background-color: rgba(4, 58, 158);
+    background-color: rgb(55, 62, 65);
     color: rgb(255,255,255);
 }
 
@@ -83,8 +86,9 @@ header {
     float: left;
     width: 100%;
     height: auto;
-    background-color: rgba(4,173,245,1); 
+    background-color: rgba(255,255,255); 
     text-align: center;  
+    border-bottom: rgb(55, 62, 65) 2px solid;
 }
 
 header h1 {
@@ -102,16 +106,20 @@ header h1 {
     padding: 4px;
     margin: 5px;
     text-align: center;
-    background-color:rgba(4,173,245,255);
-    border: black 2px solid;
+    background-color:rgba(255,255,255);
+    border: 2px solid;
     border-radius: 4px;
     display: inline-block;
+}
+
+#titleIconLogo{
+    display: none;
 }
 
 #flexbox-main {  /*Needed for navbar to webkit sticky */
     display: inline-flex;
     margin: 0;
-    height: 100%;
+    height: max-content;
     width: 100%;
 }
 
@@ -140,7 +148,7 @@ article p{
     padding: 15px 0px 20px 0px;
     text-align: center;
     font-size: 1.4em;
-    border: black 2px solid;
+    border: 2px solid;
     border-radius: 4px;
 }
 
@@ -209,9 +217,11 @@ footer {
     float: left;
     margin: 0;
     width: 100%;
-    background-color: rgba(4,173,245);
+    background-color: rgba(255,255,255);
    min-height: fit-content;
+   border-top: rgb(55, 62, 65) 2px solid;
 }
+
 
 footer p{
     font-size: .6em;
@@ -266,7 +276,7 @@ footer p{
 }
 
 .opening-hours-table td{
- border: 2px solid black;
+ border: 2px solid;
  border-collapse: collapse;
 }
 
@@ -307,6 +317,16 @@ width: 2.5em;
     height: fit-content;
     }
 
+    #titleIcon{
+        display: none;
+    }
+
+    #titleIconLogo{
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+
     #content{
         width: 90%;
         overflow: auto;
@@ -322,7 +342,9 @@ width: 2.5em;
  #openBtnDiv {
         float: left;
         width: 10%;
-        background-color: rgba(4,173,245);
+        background-color: rgba(255,255,255);
+        border-right: rgb(55, 62, 65) 2px solid;
+    
     }
 
  .navBar {
@@ -331,7 +353,7 @@ width: 2.5em;
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: rgba(4,173,245);
+        background-color: rgba(109, 110, 112);
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 10px;
@@ -339,6 +361,10 @@ width: 2.5em;
  
     #logo{
         display: none;
+    }
+
+    nav{
+        height: 100%;
     }
 
     .navBar ul {
