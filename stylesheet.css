@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgba(255,255,255);
-    height: 100%;
+    height: max-content;
     color: rgb(80, 77, 77);
     border-color: rgb(55, 62, 65);
     
@@ -119,7 +119,7 @@ header h1 {
 #flexbox-main {  /*Needed for navbar to webkit sticky */
     display: inline-flex;
     margin: 0;
-    height: max-content;
+    height: 100%;
     width: 100%;
 }
 
@@ -247,7 +247,7 @@ footer p{
 
 
 .rowBox{
-    width: 26%;
+    width: 35%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -262,7 +262,7 @@ footer p{
 }
 
 #gMapBox{
-    width: 45%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
@@ -271,19 +271,21 @@ footer p{
 }
 
 .opening-hours-table{
-    width: 100%;
+    width: max-content;
     overflow: auto;
 }
 
 .opening-hours-table td{
  border: 2px solid;
  border-collapse: collapse;
+ 
 }
 
 #socialsBox{
     padding: 5px;
     width: fit-content;
     margin: auto;  
+    float: left;
 }
 
 .socialsIcon{
@@ -410,8 +412,15 @@ width: 2.5em;
         margin: 6px 0;
       }
 
+      #slider {
+        width: 99%;
+        margin:auto;
+        overflow: hidden;
+    }
+
     #socialsBox{
         margin: auto; 
+        float: none;
     }
 
     .row{
@@ -421,7 +430,7 @@ width: 2.5em;
 
     #gMapBox,
     .rowBox{
-        width: 90%;
+        width: 80%;
     }
 
     .row p {
