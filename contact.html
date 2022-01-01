@@ -16,6 +16,12 @@
   </head>
 
   <body>
+
+    <div class='spinner-wrapper'>
+      <div class="spinner"></div>
+      <h3 id="spinnerTitle">Sanlon Joinery Construction</h3>
+   </div>
+
     <div id="flexbox-main">
       <nav id="myNavBar" class="navBar" role="navigation">
         <button id="navCloseBtn" onclick="closeNav()" role="button">
@@ -155,6 +161,9 @@
       </div>
       
     </div>
-
+    <script>
+      let spinnerWrapper = document.querySelector('.spinner-wrapper'); 
+          spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+    </script>
   </body>
 </html>
