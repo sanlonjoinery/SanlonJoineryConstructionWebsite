@@ -7,6 +7,7 @@
     <title>Contact | Sanlon Joinery Construction</title>
     <link rel="stylesheet" href="stylesheet.css"/>
     <script type="text/javascript" src="features.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
 <link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
@@ -162,8 +163,9 @@
       
     </div>
     <script>
-      let spinnerWrapper = document.querySelector('.spinner-wrapper'); 
-          spinnerWrapper.parentElement.removeChild(spinnerWrapper);
-    </script>
+      $(window).on("load",function(){
+        $(".spinner-wrapper").fadeOut("slow");
+      });
+  </script>
   </body>
 </html>
