@@ -467,9 +467,10 @@ width: 2.5em;
     width: 100%;
   }
 
- .gallery :hover{
+  /* .gallery :hover{
     border: 3px rgb(55, 62, 65) solid;
-  } 
+    
+  }   */
   
   .imgResize {
     padding: 0 6px;
@@ -556,7 +557,7 @@ width: 2.5em;
    position: fixed;
    bottom: 20%;
    width: auto;
-    text-decoration: underline;
+   text-decoration: underline;
 }
 
 /*[END] LOADING SCREEN*/
